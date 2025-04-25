@@ -1,0 +1,8 @@
+.loginBackground {
+    background-image: url('https://wallpapers.com/images/hd/movie-poster-background-q1zm830g0hfww2lk.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}

@@ -5,6 +5,8 @@
 # Features 
 - Login / Signup
     - Signin/ Signup form
+    - Signup Form
+
     - Redirect to Browse Page
 - Browse (after authentication)
  - Header

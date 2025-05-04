@@ -45,7 +45,7 @@ const Login = () => {
         }).catch((error) => {
           setErrorMessage(error.message)
         });
-        console.log(user)
+        
     
        
       })
@@ -59,7 +59,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log(user)
+       
       
         // ...
       })

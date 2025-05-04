@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
 import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { LOGO } from "../utils/constants";
+import { LOGO, USER_AVATAR } from "../utils/constants";
 
 const Header = () => {
 
@@ -41,11 +41,11 @@ const Header = () => {
 
 
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute w-screen px-9 py-4 bg-gradient-to-b from-black z-10 flex justify-between">
         <img className="w-46 h-20" src={LOGO} alt="CineFlix Logo" />
         { 
         user && <div className="flex p-2">
-          <img className="h-10 mt-3 " src={user?.photoURL} alt="user-icon" />
+          <img className="h-10 mt-3 " src={USER_AVATAR} alt="user-icon" />
           <button onClick={handleSignOut} className=" font-bold text-white">Sign Out</button>
         </div> 
         }

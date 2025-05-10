@@ -81,7 +81,7 @@ const Login = () => {
   return (
     <div className="loginBackground ">
         <Header />
-        <form onSubmit={(e) => e.preventDefault()} className="p-12 bg-black bg-black-500 absolute w-2/13 my-36 mx-auto right-0 left-0 text-white block center bg-opacity-90">
+        <form onSubmit={(e) => e.preventDefault()} className="w-full md:w-3/12 p-12 bg-black bg-black-500 absolute w-2/13 my-36 mx-auto right-0 left-0 text-white block center bg-opacity-90">
           <h1 className="font-bold text-3xl py-4">{ isSignInForm ? "Sign In" : "Sign Up" }</h1>
           { !isSignInForm && (<input ref={name}  type="text" placeholder="Full Name"  className="p-4 my-2 block w-full bg-gray-900"/>)}
 

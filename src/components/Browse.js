@@ -6,9 +6,9 @@ import { useSelector } from "react-redux";
 
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import usePopularMovies from "../hooks/usePopularMovies";
-import useLatestMovies from "../hooks/useLatestMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
 import useUpcomingMovies from "../hooks/useUpComingMovies";
+import useMoreMovies from "../hooks/useMoreMovies";
 
 
 const Browse = () => {
@@ -18,8 +18,8 @@ const Browse = () => {
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
-  useLatestMovies();
   useUpcomingMovies();
+  useMoreMovies();
 
   return (
     <>

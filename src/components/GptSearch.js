@@ -4,7 +4,7 @@ import GptSearchBar from "./GptSearchBar"
 
 const GptSearch = () => {
   return (
-    <div>
+    <div className="fixed -z-10">
         <GptSearchBar />
         <GptMovieSuggestions />
     </div>

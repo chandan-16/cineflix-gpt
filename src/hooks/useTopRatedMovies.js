@@ -12,7 +12,6 @@ const useTopRatedMovies = (movieId) => {
       // const data = await fetch("https://api.themoviedb.org/3/movie/" + movieId + "/videos?language=en-US", API_OPTIONS)
   
       const json = await data.json();
-      console.log("data", json)
      
       dispatch(addTopRatedMovies(json.results))
     }
